@@ -10,7 +10,7 @@ I will let you know how the app flow be:
 
 Applies all
 \*{
-Operations are not only local they are actively connected to server and database to instancely provide the updated values
+Operations\n are not only local they are actively connected to server and database to instancely provide the updated values
 }
 
 1. Log-In screen:
@@ -18,33 +18,33 @@ Operations are not only local they are actively connected to server and database
 
 // Enter the Credentials and Click Log-In Button
 
-if Entered Credentials are equal to user available in database:
-if Entered mail id or user name is not verified:
+IF Entered Credentials are equal to user available in database:
+IF Entered mail id or user name is not verified:
 UI Shows "Validation Pending! to validate Click Validate"
-if clicked on `Validate` hyper link:
+IF clicked on `Validate` hyper link:
 it will direct to `/validate` page - where you need to enter pin
-if Pin Entered is correct:
+IF Pin Entered is correct:
 navigates to login page `/`
-else if Pin is Empty or less than 4 digit:
+ELSE IF Pin is Empty or less than 4 digit:
 UI Shows "Pin Cannot be Empty or Less than 4 Digit!!!"
-else if Pin is Not Valid:
+ELSE IF Pin is Not Valid:
 UI Shows "Invalid PIN Number"
-else:
+ELSE:
 login to the application (while logging in it generates `token` and stores in browser cookies), pulls the gas providers details from database and user details to keep the app
 ready to use
-else if Entered Credentials are NOT equal to user available in database:
+ELSE IF Entered Credentials are NOT equal to user available in database:
 UI shows "Invalid Credentials, Please Retry Login!!!" in bottom red color
-else if Any of Entered Credentials are EMPTY:
+ELSE IF Any of Entered Credentials are EMPTY:
 UI shows "One or More Input Field is Empty!!!"
 // Click `Create An Account` button
 
-if Any of Entered Credentials are EMPTY:
+IF Any of Entered Credentials are EMPTY:
 UI shows "One or More Input Field is Empty!!!"
-else if mail address not ending with @gmail.com
+ELSE IF mail address not ending with @gmail.com
 UI shows "Enter Valid GMAIL Signature _@gmail_ !!!"
-else if mail id already exist in user database:
+ELSE IF mail id already exist in user database:
 UI shows "User Already Exist, Try Logging In!!!"
-else if Entered Credentials are new and valid:
+ELSE IF Entered Credentials are new and valid:
 UI Shows Alert saying Account successfully created meanwhile
 BackEnd generates a pin and sends to entered mail address and then page will direct to login
 page to login in
@@ -52,14 +52,14 @@ page to login in
 Clicked on `Forgot Password` element:
 
 First enter mail id and click Generate Pin
-If Entered Mail id is valid and `Generate Pin` hyperlink is clicked:
+IF Entered Mail id is valid and `Generate Pin` hyperlink is clicked:
 UI Shows Alert Prompt saying Pin Sent to Registered mail address
 ..Once got pin Enter pin and password:
 If Any of Entered Credentials are EMPTY:
 UI shows "Pin or Password Cannot be Empty or Less than 4 Digit!!!"
-ELSE If Invalid PIN entered :
+ELSE IF Invalid PIN entered :
 UI Shows "Invalid Pin Number"
-ElSE if PIN is Correct and Password is Entered:
+ElSE IF PIN is Correct and Password is Entered:
 navigates to Login In page
 
 // Once Logged In
@@ -77,15 +77,15 @@ Gas Provier - "All"
 
 If Gas Category Selected == "All":
 UI Shows All Available Providers
-else If Gas Category Selected == Any SubCategory :
+ELSE IF Gas Category Selected == Any SubCategory :
 UI Shows All Providers Within that Gas Category
-else If Gas Category Selected == "All" AND Gas Provider == Any SubProvider:
+ELSE IF Gas Category Selected == "All" AND Gas Provider == Any SubProvider:
 UI Shows All SAME Providers from all GAS Category
-else IF Gas Category Selected == Any SubCategory AND Gas Provider == Any SubProvider:
+ELSE IF Gas Category Selected == Any SubCategory AND Gas Provider == Any SubProvider:
 UI Shows Matching Providing from Matching Gas Category
 
 // Booking Slot
-If Once any GAS Provider Card is Clicked or Selected (`/Info/Services`):
+IF Once any GAS Provider Card is Clicked or Selected (`/Info/Services`):
 navigates to `/Info/booking/slot` page where the previously selected information are captured
 slots displayed to selected
 
@@ -98,23 +98,23 @@ Displays all details gathered from `/Info/Services` and `/Info/booking/slot` in 
 
 it will also display 3 quantities to purchase. By default none is selected to purchase
 
-If Clicked Order AND Quantity Card Not Selected :
+IF Clicked Order AND Quantity Card Not Selected :
 UI Show "Select a Quantity to Book"
-else Clicker Order:
+ELSE Clicker Order:
 Alert Prompts saying BOOKING IS SUCCESSFUL
 // History - Place to see all Booked Items:
 
-If No Items booked:
+IF No Items booked:
 UI Shows "No Booked History to Display"
-else:
+ELSE:
 UI Displays all Booked items in Card
-If HOVERED Over:
+IF HOVERED Over:
 UI Shows `Cancel Order` to cancel the order
-If Cancel Order is Clicked:
+IF Cancel Order is Clicked:
 UI Shows a Page Asking to confirm Yes or No:
-If Yes:
+IF Yes:
 Cancels Order
-If No:
+IF No:
 navigates back (does None)
 
 // Profile - to see current user details
