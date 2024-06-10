@@ -1,4 +1,4 @@
-Hi Everyone, Hope the Pseudo code helps in Functionality i have implemented in my code!
+Hi Everyone, Hope the Pseudo code helps in understanding Functionality i have implemented in my code!
 
 Technologies used in code: (Both FrontEnd and BackEnd)
 
