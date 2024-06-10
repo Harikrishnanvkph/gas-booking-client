@@ -50,7 +50,14 @@ nav > ul{
     display: none;
 }
 
-
+@media (max-width: 768px){
+    nav > ul{
+        width: 60%;
+        display: flex;
+        gap: 5px;
+        justify-content: flex-end;
+    }
+}
 
 @media (max-width : 539px){
     .service-provider{
@@ -135,5 +142,3 @@ nav > ul{
         font-size: 0.8em;
     }
 }
-
-
