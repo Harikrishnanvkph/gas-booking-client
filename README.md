@@ -9,8 +9,8 @@ BackEnd - Node JS, Express JS, MONGODB, CORS, dotEnv, cookie-parser, Node Mailer
 I will let you know how the app flow be:
 
 Applies all
-\*{
-Operations\n are not only local they are actively connected to server and database to instancely provide the updated values
+*{
+Operations are not only local they are actively connected to server and database to instancely provide the updated values
 }
 
 1. Log-In screen:
