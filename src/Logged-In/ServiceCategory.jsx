@@ -55,6 +55,12 @@ function ServiceCategory() {
               <li>
                 <Link to="/Info/history">History</Link>
               </li>
+              <li onClick={()=>{
+                const bool = window.confirm("Confirm if you want to Logout");
+                if(bool){
+                  navigate("/")
+                }
+              }}>LogOut</li>
             </ul>
             <div className="menu trim p-3" onClick={handleStrike}>
               <p className="m-0 pr-3 page">Pages</p>
@@ -69,6 +75,12 @@ function ServiceCategory() {
                 <li>
                   <Link to="/Info/history">History</Link>
                 </li>
+                <li onClick={()=>{
+                const bool = window.confirm("Confirm if you want to Logout");
+                  if(bool){
+                    navigate("/")
+                  }
+                }}>LogOut</li>
               </ul>
             </div>
           </nav>
