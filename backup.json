@@ -1,0 +1,192 @@
+{
+  "Natural Gas": [
+    {
+      "company": "GAIL",
+      "description": "Gas Authority of India Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 1500 },
+        { "quantity": "19 Kg", "cost": 2000 },
+        { "quantity": "47.5 Kg", "cost": 3000 }
+      ]
+    },
+    {
+      "company": "ONGC",
+      "description": "Oil and Natural Gas Corporation",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 1600 },
+        { "quantity": "19 Kg", "cost": 2200 },
+        { "quantity": "47.5 Kg", "cost": 3200 }
+      ]
+    },
+    {
+      "company": "IOCL",
+      "description": "Indian Oil Corporation Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 1700 },
+        { "quantity": "19 Kg", "cost": 2400 },
+        { "quantity": "47.5 Kg", "cost": 3400 }
+      ]
+    },
+    {
+      "company": "BPCL",
+      "description": "Bharat Petroleum Corporation Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 1800 },
+        { "quantity": "19 Kg", "cost": 2600 },
+        { "quantity": "47.5 Kg", "cost": 3600 }
+      ]
+    }
+  ],
+  "Liquefied Petroleum Gas": [
+    {
+      "company": "HPCL",
+      "description": "Hindustan Petroleum Corporation Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 1900 },
+        { "quantity": "19 Kg", "cost": 2500 },
+        { "quantity": "47.5 Kg", "cost": 3500 }
+      ]
+    },
+    {
+      "company": "BPCL",
+      "description": "Bharat Petroleum Corporation Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2000 },
+        { "quantity": "19 Kg", "cost": 2700 },
+        { "quantity": "47.5 Kg", "cost": 3700 }
+      ]
+    },
+    {
+      "company": "IOCL",
+      "description": "Indian Oil Corporation Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2100 },
+        { "quantity": "19 Kg", "cost": 2800 },
+        { "quantity": "47.5 Kg", "cost": 3800 }
+      ]
+    },
+    {
+      "company": "RIL",
+      "description": "Reliance Industries Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2200 },
+        { "quantity": "19 Kg", "cost": 2900 },
+        { "quantity": "47.5 Kg", "cost": 3900 }
+      ]
+    }
+  ],
+  "Compressed Natural Gas": [
+    {
+      "company": "HPCL",
+      "description": "Hindustan Petroleum Corporation Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2300 },
+        { "quantity": "19 Kg", "cost": 3000 },
+        { "quantity": "47.5 Kg", "cost": 4000 }
+      ]
+    },
+    {
+      "company": "IGL",
+      "description": "Indraprastha Gas Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2400 },
+        { "quantity": "19 Kg", "cost": 3100 },
+        { "quantity": "47.5 Kg", "cost": 4100 }
+      ]
+    },
+    {
+      "company": "MGL",
+      "description": "Mahanagar Gas Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2500 },
+        { "quantity": "19 Kg", "cost": 3200 },
+        { "quantity": "47.5 Kg", "cost": 4200 }
+      ]
+    },
+    {
+      "company": "Adani Gas",
+      "description": "Adani Gas",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2600 },
+        { "quantity": "19 Kg", "cost": 3300 },
+        { "quantity": "47.5 Kg", "cost": 4300 }
+      ]
+    }
+  ],
+  "Liquefied Natural Gas": [
+    {
+      "company": "Petronet LNG",
+      "description": "From GAIL, ONGC, IOCL and BPCL",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2700 },
+        { "quantity": "19 Kg", "cost": 3400 },
+        { "quantity": "47.5 Kg", "cost": 4400 }
+      ]
+    },
+    {
+      "company": "Shell India",
+      "description": "Shell India",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2800 },
+        { "quantity": "19 Kg", "cost": 3500 },
+        { "quantity": "47.5 Kg", "cost": 4500 }
+      ]
+    },
+    {
+      "company": "GAIL",
+      "description": "Gas Authority of India Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 2900 },
+        { "quantity": "19 Kg", "cost": 3600 },
+        { "quantity": "47.5 Kg", "cost": 4600 }
+      ]
+    },
+    {
+      "company": "RIL",
+      "description": "Reliance Industries Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 3000 },
+        { "quantity": "19 Kg", "cost": 3700 },
+        { "quantity": "47.5 Kg", "cost": 4700 }
+      ]
+    }
+  ],
+  "City Gas Distribution": [
+    {
+      "company": "GAIL",
+      "description": "Gas Authority of India Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 3100 },
+        { "quantity": "19 Kg", "cost": 3800 },
+        { "quantity": "47.5 Kg", "cost": 4800 }
+      ]
+    },
+    {
+      "company": "IGL",
+      "description": "Indraprastha Gas Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 3200 },
+        { "quantity": "19 Kg", "cost": 3900 },
+        { "quantity": "47.5 Kg", "cost": 4900 }
+      ]
+    },
+    {
+      "company": "MGL",
+      "description": "Mahanagar Gas Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 3300 },
+        { "quantity": "19 Kg", "cost": 4000 },
+        { "quantity": "47.5 Kg", "cost": 5000 }
+      ]
+    },
+    {
+      "company": "Gujarat Gas Ltd",
+      "description": "Gujarat Gas Limited",
+      "quantities": [
+        { "quantity": "14.2 Kg", "cost": 3400 },
+        { "quantity": "19 Kg", "cost": 4100 },
+        { "quantity": "47.5 Kg", "cost": 5100 }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,184 @@
+*{
+    box-sizing: border-box;
+    font-family :Arial, Helvetica, sans-serif
+}
+
+.login-full{
+    width: 100vw;
+    height: 100vh;
+    background-color: coral;
+    padding : 5em;
+    display: flex;
+    align-items: center;
+}
+
+@media (min-width : 720px) and (max-width : 960px){
+    .login-full{
+        padding : 3em;
+    }
+}
+
+@media (min-width : 540px) and (max-width : 719px){
+    .login-full{
+        padding : 1em;
+    }
+    .login-area{
+        padding-right: 0%;
+    }
+}
+
+@media (max-width : 539px){
+    .login-full{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding : 0%;
+        border-radius: 0%;
+        background-image: url("../assets/img/login-image/img_1.jpg");
+        *{
+            border-radius: 0% !important;
+        }
+        button{
+            width: 100%;
+            justify-content: center;
+        }
+        img{
+            opacity: 0.5;
+        }
+    }
+    .login-row{
+        height: fit-content !important;
+    }
+    .login-area{
+        padding: 0%;
+    }
+    .login-companyshow{
+        display: none;
+    }
+}
+
+.login-row{
+    background-color: white;
+    border-radius: 10px;
+    height: 80vh;
+    overflow: hidden;
+}
+
+.login-area,.login-companyshow{
+    margin : 15px;
+}
+
+
+.enter-password,.enter-username,.enter-usermail{
+    position: relative;
+    padding: 0.5em;
+    margin: 0%;
+    padding-left: 0px;
+    width: 100%;
+}
+
+.password,.username,.mail {
+    border-radius: 0.3em;
+    width: 100%; /* Full width of the container */
+    padding: 0.5em;
+    padding-right: 3em;
+}
+
+.username{
+    padding-right: 0.5em;
+}
+
+.enter-password .password-icon{
+    position: absolute;
+    right: 1.5em;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.welcome-text{
+    font-size: 30px;
+    margin-top: 20px;
+
+    .welcome-text-innote {
+        font-size: 18px;
+    }
+}
+
+.icon{
+    margin: 20px 0px;
+    *{
+        font-family:Arial, Helvetica, sans-serif
+    }
+    span{
+        padding-right: 5px;
+        border: 2px solid black;
+        border-left-style: none;
+    }
+}
+
+.password-forgot{
+    display: flex;
+    justify-content: end;
+    .password-forgot-btn:hover{
+        cursor: pointer;
+    }
+}
+
+.login-button,.login-register{
+    min-width : 50%
+}
+
+.line{
+    height: 2px;
+    background-color: grey;
+}
+
+.line-div{
+    text-align: center;
+    position: relative;
+    margin: 1em 0px;
+}
+
+.line-text{
+    position: absolute;
+    display: inline-block;
+    top: calc(50% - 10px);
+    background-color: white;
+    padding: 0 20px;
+    margin: 0;
+}
+
+.login-companyshow{
+    padding: 0%;
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.ptag{
+    margin-top: 10px;
+    font-size: 15px;
+    font-style: italic;
+    & ~ div{
+        font-size: 13px;
+    }
+}
+
+.link-tc{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.genPin{
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+    p{
+        margin: 0%;
+        color: dodgerblue;
+        text-decoration: underline;
+    }
+}

@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+}
+
+.loggedIn{
+    background-color: rgb(255, 180, 30);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .icon{
+        margin-left:  10px;
+        margin-right:  10px;
+    }
+}
+
+li{
+    padding: 10px;
+    *{color: black;}
+    &:hover{
+        background-color: rgb(243, 229, 229);
+    }
+}
+
+nav > ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.1em;
+}
+
+
+.serviceprovider{
+    background-color: rgb(232, 244, 244);
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+#select-Category, #select-provider{
+    min-width: 8em;
+    width: 12em;
+}
+.menu{
+    display: none;
+}
+
+
+
+@media (max-width : 539px){
+    .service-provider{
+        margin-top: 10px;
+    }
+    .menu{
+        position: relative;
+        border: 1px solid black;
+        border-radius: 3px;
+        display: flex;
+        align-items: center;
+    }
+
+    nav > ul{
+        display: none;
+    }
+    .drop{
+        z-index: 3;
+        position: absolute;
+        width: 100%;
+        padding: 0%;
+        list-style: none;
+        border: 1px solid black;
+        background-color: rgb(255, 180, 30);
+        top: 100%;
+        right: 0%;
+        li{
+            *{
+                color: black;
+            }
+            padding: 10px 20px;
+            min-width: max-content;
+            display: flex;
+            justify-content: center;
+            &:hover{
+                background-color: red;
+            }
+        }
+    }
+}
+
+@media  (max-width: 400px){
+    .page{
+        display: none;
+    }
+    .menu{
+        padding: 5px 15px !important;
+    }
+    .drop{
+        width: 100px;
+    }
+}
+
+.card{
+    width: 100%;
+    height: 300px;
+    img{
+        height: 70%;
+        object-fit: contain;
+    }
+}
+
+.cards{
+    display: flex;
+    padding: 5px;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    .card-title{
+        font-size: 1.1em;
+        span{
+            font-weight: lighter;
+            font-size: 0.8em;
+        }
+    }
+    .card-text{
+        font-size: 0.8em;
+    }
+}
+
+

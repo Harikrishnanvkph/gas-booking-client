@@ -1,0 +1,316 @@
+*{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+}
+
+.book-details input{
+    padding: 10px;
+}
+
+.bookScreen{
+    padding: 20px 20px;
+}
+.title{
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.book-date-show{
+    margin: 20px 0%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+
+    #date-drop{
+        border: 2px solid dodgerblue;
+        width: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+    p{
+        margin: 0%;
+        font-size: 20px;
+    }
+}
+
+.book-gas-category,.book-gas-provider,.book-gas-provider-inner-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.book-gas-category,.book-gas-provider{
+    border: 1px solid rgb(255, 180, 30);
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 5px;
+    flex: 1;
+    padding: 15px;
+}
+
+.select-item-show{
+    display: flex;
+    justify-content: space-evenly;
+    height: max-content;
+    width: 100%;
+    margin: 0px;
+    .book-gas-category{
+        text-align: center;
+    }
+}
+
+.book-gas-provider-inner{
+    max-height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.book-gas-provider-inner-icon {
+    height: 60px;
+    width: 100px; /* Define width if not set */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img{max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;}
+}
+
+.time-slot{
+    height: 100px;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    .card{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 200px;
+        max-height: 100%;
+        border: 2px solid rgb(255, 180, 30);
+        background-color: rgb(246, 255, 175);
+        h6{
+            font-weight: bold;
+            margin: 0%;
+        }
+        &:hover{
+            background-color: rgb(249, 245, 137);   
+        }
+    }
+}
+
+.book-info{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 18px;
+}
+
+.provider-card:hover,.card{
+    cursor: pointer;
+}
+
+/* BookDetails.jsx */
+
+.book-user-details,.book-booking-details{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 18px;
+    p{
+        width: 10%;
+        margin: 0%;
+    }
+    .tile{
+        margin: 5px;
+    }
+}
+
+.label,input{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.rate-cards{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0%;
+    height: fit-content;
+    width: 100%;
+    & > p{
+        font-style: italic;
+    }
+    .card-show{
+        background-color: aqua;
+        max-height: 70px;
+        max-width: 150px;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid rgb(255, 180, 30);
+        background-color: rgb(246, 255, 175);
+        p{
+            font-weight: bold;
+        }
+        &:hover{
+            background-color: rgb(249, 245, 137);   
+        }
+    }
+    p{
+        margin: 0%;
+    }
+}
+
+.button{
+    min-width: fit-content;
+    width: 200px;
+    margin: 20px;
+}
+
+
+@media (max-width : 539px){
+    .slot{
+        font-size: 15px;
+    }
+    
+    .tile, .book-user-details,.book-booking-details{
+        padding: 0%;
+        margin: 0%;
+    }
+    .card-show{
+        padding: 0%;
+        &:nth-child(3){
+            margin: 5px;
+        }
+    }
+    .label{
+        flex : 2;
+    }
+    .book-inter{
+        display: none;
+    }
+    .book-input{
+        flex:6;
+    }
+    .book-gas-category,.book-gas-provider{
+        flex: auto;
+    }
+    .select-item-show{
+        margin-top: 5px;
+    }
+    .book-date-show{
+        padding: 0%;
+        gap: 0px;
+        *{
+            display: flex;
+            justify-content: center;
+        }
+        .book-h6{
+            margin-bottom: 15px;
+            width: 100%;
+            height: 100%;
+        }
+        .book-p .select{
+            width: 50%
+        }
+    } 
+}
+
+@media (max-width : 400px){
+    .book-gas-category,.book-gas-provider{
+        flex: auto;
+        padding: 0%;
+    }
+    .rate-cards{
+        display: block;
+    }
+    .card-show{
+        display: flex !important;
+        height: fit-content;
+        max-width: 100% !important;
+        &:nth-child(3){
+            margin: 5px 0px !important;
+        };
+    }
+    .bookScreen{
+        padding: 5px;
+    }
+    .tile{
+        display: flex;
+        flex-direction: column;
+    }
+    .time-slot{
+        max-width: 100%;
+        gap: 5px;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        margin: 0%;
+        height: 200px;
+        *{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0%;
+            margin: 0%;
+            flex: 1;
+            max-width: 100% !important;
+        }
+    }
+    .book-info{
+        max-width: 100%;
+    }
+    .label, .book-input{
+        width: 100%;
+        margin: 5px;
+    }
+}
+
+@media (max-width : 991px){
+    .label,.book-input{
+        flex : 2;
+    }
+    .book-inter{
+        flex: 1;
+    }
+}
+
+@media (max-width : 768px){
+    .rate-p{
+        text-align: center;
+        margin-bottom: 10px !important;
+    }
+    .rate-after{
+        display: none;
+    }
+    .label{
+        flex : 2;
+    }
+    .book-inter{
+        flex: 1;
+    }
+    .book-input{
+        flex: 5;
+    }
+    .book-user-details,.card-show{
+        padding:0% !important;
+    }
+    .book-gas-category,.book-gas-provider{padding: 5px;}
+    .card-show{
+        flex: 1;
+    }
+}
