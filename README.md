@@ -6,6 +6,8 @@ FrontEnd - React JS, React Redux Toolkit, Redux Persist, Axios, React-Router-Dom
 
 BackEnd - Node JS, Express JS, MONGODB, CORS, dotEnv, cookie-parser, Node Mailer
 
+IF YOU ARE OPENING THE APPLICATION FOR FIRST TIME PLEASE WAIT IT MAY A WHILE TO LOAD AS THE SERVER ONBOARDED ON FREE PLAN IN RENDER.com
+
 I will let you know how the app flow be:
 
 Applies all
